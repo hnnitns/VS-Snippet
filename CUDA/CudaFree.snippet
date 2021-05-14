@@ -5,30 +5,23 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>CudaMalloc</Title>
+      <Title>CudaFree</Title>
       <Author>HnniTns</Author>
-      <Description>cudaMallocに対するコードスニペット</Description>
+      <Description>cudaFree</Description>
       <HelpUrl>https://github.com/hnnitns/VS-Snippet</HelpUrl>
-      <Shortcut>CudaMalloc</Shortcut>
+      <Shortcut>CudaFree</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>devPtr</ID>
+          <ID>devptr</ID>
           <ToolTip>確保されたメモリポインタ</ToolTip>
           <Default>devPtr</Default>
           <Function>
           </Function>
         </Literal>
-        <Literal Editable="true">
-          <ID>size</ID>
-          <ToolTip>確保するサイズ</ToolTip>
-          <Default>size</Default>
-          <Function>
-          </Function>
-        </Literal>
       </Declarations>
-      <Code Language="cpp" Delimiter="$"><![CDATA[cudaMalloc((void**)&$devPtr$, $size$);$end$]]></Code>
+      <Code Language="cpp" Delimiter="$"><![CDATA[cudaFree($devptr$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

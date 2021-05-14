@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>CudaGetErrorString</Title>
+      <Author>HnniTns</Author>
+      <Description>cudaGetErrorStringに対するコードスニペット</Description>
+      <HelpUrl>https://github.com/hnnitns/VS-Snippet</HelpUrl>
+      <Shortcut>CudaGetErrorString</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>error</ID>
+          <ToolTip>cudaError_t</ToolTip>
+          <Default>error</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[cudaGetErrorString($error$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
