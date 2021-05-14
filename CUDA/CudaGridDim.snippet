@@ -5,23 +5,23 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>CudaFree</Title>
+      <Title>CudaGridDim</Title>
       <Author>HnniTns</Author>
-      <Description>cudaFree</Description>
+      <Description>gridDimに対するコードスニペット</Description>
       <HelpUrl>https://github.com/hnnitns/VS-Snippet</HelpUrl>
-      <Shortcut>CudaFree</Shortcut>
+      <Shortcut>CudaGridDim</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>devptr</ID>
-          <ToolTip>確保されたメモリポインタ</ToolTip>
-          <Default>devPtr</Default>
+          <ID>xyz</ID>
+          <ToolTip>Dim3のどれか</ToolTip>
+          <Default>xyz</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="cpp" Delimiter="$"><![CDATA[cudaFree($devptr$);$end$]]></Code>
+      <Code Language="cpp" Delimiter="$"><![CDATA[gridDim.$xyz$$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
