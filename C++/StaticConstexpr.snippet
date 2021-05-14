@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>StaticConstexpr</Title>
+      <Author>HnniTns</Author>
+      <Description>コンパイル時定数に対するコードスニペット</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>StaticConstexpr</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>型</ToolTip>
+          <Default>auto</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>変数名</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>content</ID>
+          <ToolTip>内容</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[static constexpr $type$ $name${ $content$ }; $end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

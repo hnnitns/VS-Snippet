@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>ClassNotCopyMove</Title>
+      <Author>HnniTns</Author>
+      <Description>コピー・ムーブコンストラクタと代入演算子を削除しているクラスです</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ClassNotCopyMove</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>クラス名</ToolTip>
+          <Default>MyClass</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[class $name$
+{
+public:
+	$name$();
+	~$name$();
+	$name$(const $name$ &) = delete;
+	$name$ & operator=(const $name$ &) = delete;
+	$name$($name$ &&) noexcept = delete;
+	$name$ & operator=($name$ &&) noexcept = delete;
+	
+public:
+
+private:
+  $selected$ $end$
+};]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

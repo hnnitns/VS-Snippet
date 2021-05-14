@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>ForInit</Title>
+      <Author>HnniTns</Author>
+      <Description>for ループに対する初期値付きコード スニペット</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ForInit</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>コントロール変数</ToolTip>
+          <Default>size_t</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>index</ID>
+          <ToolTip>インデックス</ToolTip>
+          <Default>i</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>init</ID>
+          <ToolTip>初期値</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>max</ID>
+          <ToolTip>最大の長さ</ToolTip>
+          <Default>length</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[for($type$ $index$ = $init$; $index$ < $max$; $index$++)
+{
+    $selected$ $end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

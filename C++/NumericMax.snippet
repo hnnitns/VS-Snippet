@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>NumericMax</Title>
+      <Author>HnniTns</Author>
+      <Description>numeric_limitに対するコードスニペット</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>NumericMax</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>名前</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[(std::numeric_limits<$name$>::max)() $end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
