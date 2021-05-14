@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>CudaMemcpy</Title>
+      <Author>HnniTns</Author>
+      <Description>cudaMemcpyに対するコードスニペット</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>CudaMemcpy</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>dst</ID>
+          <ToolTip>コピー元のメモリポインタ</ToolTip>
+          <Default>dst</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>src</ID>
+          <ToolTip>コピー先のメモリポインタ</ToolTip>
+          <Default>src</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>size</ID>
+          <ToolTip>バイト数</ToolTip>
+          <Default>count</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>kind</ID>
+          <ToolTip>コピー方向を指定するパラメーター</ToolTip>
+          <Default>kind</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Delimiter="$"><![CDATA[cudaMemcpy($dst$, $src$, $size$, $kind$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
