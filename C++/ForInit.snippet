@@ -43,8 +43,15 @@
           <Function>
           </Function>
         </Literal>
+        <Literal Editable="true">
+          <ID>comparison</ID>
+          <ToolTip>比較</ToolTip>
+          <Default>&lt;</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="cpp" Delimiter="$"><![CDATA[for($type$ $index$ = $init$; $index$ < $max$; $index$++)
+      <Code Language="cpp" Delimiter="$"><![CDATA[for($type$ $index$ = $init$; $index$ $comparison$ $max$; $index$++)
 {
     $selected$ $end$
 }]]></Code>
